@@ -17,24 +17,21 @@ public class OldFishinHole {
         byte pickerelCount = 0;
         short maxPoints = Short.parseShort(br.readLine());
         short possiblityCount = 0;
-        //for loop to calculate the different combinations to catch fish under the total points
         for(int i = 1; i <= maxPoints; i++) {
             if(troutValue*i <= maxPoints) {
                 possiblityCount++;
                 troutCount++;
-                System.out.print(troutCount + " Brown Trout, ");
-                // print the actual possibility with print not println
-                // and use other for loops for the other fish with print to make one overall ine like dmoj
+                System.out.println(troutCount + " Brown Trout, 0 Northern Pike, 0 Yellow Pickerel");
             }
             if(pikeValue*i <= maxPoints) {
                 possiblityCount++;
                 pikeCount++;
-                System.out.print(pikeCount + " Northern Pike, ");
+                System.out.println("0 Brown Trout, " + pikeCount + " Northern Pike, 0  Yellow Pickerel");
             }
             if(pickerelValue*i <= maxPoints) {
                 possiblityCount++;
                 pickerelCount++;
-                System.out.print(pickerelCount + " Yellow Pickerel");
+                System.out.println("0 Brown Trout, 0 Northern Pike, " + pickerelCount + " Yellow Pickerel");
             }
         }
         System.out.println("Number of ways to catch fish: " + possiblityCount);
