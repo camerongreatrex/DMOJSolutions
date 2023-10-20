@@ -26,8 +26,6 @@ public class KeepingScore {
             }
         }
         System.out.println("Cards Dealt             Points");
-
-        // Calculate points and void, singleton, doubleton for clubs
         System.out.print("Clubs ");
         int clubsCount = suitLength[1] - suitLength[0] - 1;
         for (int i = suitLength[0] + 1; i < suitLength[1]; i++) {
@@ -51,7 +49,6 @@ public class KeepingScore {
 
         System.out.println("        " + clubs);
 
-        // Similar calculations for diamonds, hearts, and spades
         System.out.print("Diamonds ");
         int diamondsCount = suitLength[2] - suitLength[1] - 1;
         for (int i = suitLength[1] + 1; i < suitLength[2]; i++) {
