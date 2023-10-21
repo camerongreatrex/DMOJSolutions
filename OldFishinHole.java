@@ -14,18 +14,23 @@ public class OldFishinHole {
         byte pickerelValue = Byte.parseByte(br.readLine());
         short maxPoints = Short.parseShort(br.readLine());
         short possibilityCount = 0;
-
+        // for loops for each fish to make sure the amount times value doesn't exceed max points
         for (byte troutCount = 0; troutCount * troutValue <= maxPoints; troutCount++) {
             for (byte pikeCount = 0; pikeCount * pikeValue <= maxPoints; pikeCount++) {
                 for (byte pickerelCount = 0; pickerelCount * pickerelValue <= maxPoints; pickerelCount++) {
+                    // adds the total points up from the first loop
                     int totalPoints = troutCount * troutValue + pikeCount * pikeValue + pickerelCount * pickerelValue;
+                    // then checks if it is less than the max points allowed and if the counts are more than 0 (so it doesn't print 0 of all fish as an option
                     if (totalPoints <= maxPoints && (troutCount > 0 || pikeCount > 0 || pickerelCount > 0)) {
+                        //increase the possibility count because they fit the question's criteria
                         possibilityCount++;
+                        // print the amount of each trout in the current combination
                         System.out.println(troutCount + " Brown Trout, " + pikeCount + " Northern Pike, " + pickerelCount + " Yellow Pickerel");
                     }
                 }
             }
         }
+        //print the overall number of ways to catch fish
         System.out.println("Number of ways to catch fish: " + possibilityCount);
     }
 }
