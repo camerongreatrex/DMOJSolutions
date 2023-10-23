@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Created by Cameron Greatrex on 2023-10-23.
+ *
+ * @author Cameron Greatrex
+ */
+
 public class OldFishinHole {
     public static void main(String[] args) throws IOException {
         //declare and initialize variables for the program
