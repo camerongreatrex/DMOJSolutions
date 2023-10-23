@@ -27,7 +27,7 @@ public class OldFishinHole {
                     // adds the total points up from the first loop
                     short totalPoints = (short) (troutCount * troutValue + pikeCount * pikeValue + pickerelCount * pickerelValue);
                     // then checks if it is less than the max points allowed and if the counts are more than 0 (so it doesn't print 0 of all fish as an option
-                    if (totalPoints <= maxPoints && (troutCount > 0 || pikeCount > 0 || pickerelCount > 0)) {
+                    if (totalPoints <= maxPoints && totalPoints > 0) {
                         //increase the possibility count because they fit the question's criteria
                         possibilityCount++;
                         // print the amount of each trout in the current combination
