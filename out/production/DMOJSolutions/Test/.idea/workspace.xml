@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="solved CupcakeParty" />
+    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="did a thing again idk what broke">
+      <change beforePath="$PROJECT_DIR$/MandatoryDMOJ/SimpleEncryption/SimpleEncryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/MandatoryDMOJ/SimpleEncryption/SimpleEncryption.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +122,6 @@
         <item itemvalue="Application.Test.MiscDMOJ.TrashPush" />
         <item itemvalue="Application.Test.MandatoryDMOJ.OldFishinHole.OldFishinHoleR2" />
         <item itemvalue="Application.Test.MandatoryDMOJ.OldFishinHole.OldFishinHoleR1" />
-        <item itemvalue="Application.Test.OldFishinHole.OldFishinHoleFinal" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698424479611</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="did a thing">
+      <created>1700147703780</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700147703781</updated>
+    </task>
+    <task id="LOCAL-00023" summary="did a thing again idk what broke">
+      <created>1700148171000</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700148171001</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +332,9 @@
     <MESSAGE value="solved various 5 pters on PC" />
     <MESSAGE value="solved trashpush" />
     <MESSAGE value="solved CupcakeParty" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved CupcakeParty" />
+    <MESSAGE value="did a thing" />
+    <MESSAGE value="did a thing again idk what broke" />
+    <option name="LAST_COMMIT_MESSAGE" value="did a thing again idk what broke" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
