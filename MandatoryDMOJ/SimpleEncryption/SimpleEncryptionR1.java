@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 
-public class SimpleEncryption {
+public class SimpleEncryptionR1 {
     public static void main(String[] args) throws IOException {
         //create the buffered reader for input in the program
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
