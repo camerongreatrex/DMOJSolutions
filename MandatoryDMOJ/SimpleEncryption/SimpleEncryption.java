@@ -10,9 +10,9 @@ public class SimpleEncryption {
         //create the buffered reader for input in the program
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // read the keyword and message
-        String encryptor = br.readLine();
+        String encryptor = br.readLine().trim();
         // remove everything but A-Z and replace it with nothing
-        String encrypting = br.readLine().replaceAll("[^A-Z]", "");
+        String encrypting = br.readLine().trim().replaceAll("[^A-Z]", "");
         // create a HashMap to store the shift value for each letter based on the keyword
         HashMap<Character, Integer> letterShiftValues = new HashMap<>();
         //iterate through all letters of the encryptor
@@ -53,6 +53,8 @@ public class SimpleEncryption {
                 //if the current char has a value, shift the value and assign the shifted value to the
                 // changed block array value
                 if (currentChar != ' ') {
+                    //new position after shifting while ensuring that the shift is within the range of
+                    //0-25
                     int shiftedIndex = (currentChar - 'A' + shift) % 26;
                     block[i][j] = (char) ('A' + shiftedIndex);
                     encryptedMessage[encryptedIndex++] = block[i][j];
