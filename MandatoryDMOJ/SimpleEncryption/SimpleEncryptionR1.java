@@ -13,6 +13,7 @@ public class SimpleEncryptionR1 {
         String encryptor = br.readLine().trim();
         // remove everything but A-Z and replace it with nothing
         String encrypting = br.readLine().trim().replaceAll("[^A-Z]", "");
+
         // create a HashMap to store the shift value for each letter based on the keyword
         HashMap<Character, Integer> letterShiftValues = new HashMap<>();
         //iterate through all letters of the encryptor
@@ -22,6 +23,7 @@ public class SimpleEncryptionR1 {
             int shiftValue = currentChar - 'A';
             letterShiftValues.put(currentChar, shiftValue);
         }
+
         // calculate the height of the block based on the length of the message and the
         // keyword while ensuring there is too much space rather than not enough (math.ceil)
         int blockHeight = (int) Math.ceil((double) encrypting.length() / encryptor.length());
@@ -40,9 +42,11 @@ public class SimpleEncryptionR1 {
                 }
             }
         }
+
         // create new char array for the encrypted values
         char[] encryptedMessage = new char[encrypting.length()];
         int encryptedIndex = 0;
+
         // encrypt the message based on the keyword by iterating through the block array
         for (int i = 0; i < blockHeight; i++) {
             for (int j = 0; j < encryptor.length(); j++) {
