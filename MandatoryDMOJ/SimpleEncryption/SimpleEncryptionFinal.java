@@ -15,6 +15,7 @@ public class SimpleEncryptionFinal {
         // calculate the height of the block based on the length of the message and the
         // keyword while ensuring there is too much space rather than not enough (math.ceil)
         int blockHeight = (int) Math.ceil((double) encrypting.length() / encryptor.length());
+        //index that doesn't change in the loop, but when the current char changes
         int index = 0;
         // encrypt the message based on the keyword by iterating through the block array
         for (int i = 0; i < blockHeight; i++) {
@@ -22,11 +23,13 @@ public class SimpleEncryptionFinal {
                 // fill the block array with a single encrypting letter until the length of the string is
                 // surpassed by the index, therefore there are no more letters
                 if (index < encrypting.length()) {
+                    // current char is the non-encrypted user inputted value at a certain index
                     char currentChar = encrypting.charAt(index++);
                     // calculate the shift value based on the current letter of the encryptor
                     int shift = encryptor.charAt(j) - 'A';
-                    // encrypt the character by shifting its ASCII value
+                    // find the int value of the shift to add to make the new encrypted value
                     int shiftedIndex = (currentChar - 'A' + shift) % 26;
+                    // encrypt the character by shifting its ASCII value
                     char encryptedChar = (char) ('A' + shiftedIndex);
                     // print the encrypted character
                     System.out.print(encryptedChar);

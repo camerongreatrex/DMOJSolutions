@@ -32,7 +32,7 @@ public class SimpleEncryptionR1 {
         for (int i = 0; i < blockHeight; i++) {
             for (int j = 0; j < encryptor.length(); j++) {
                 //fill the block array with a single encrypting letter until the length of the string is
-                // surpassed by the index, therefore there are no more letters
+                // surpassed by the index, therefore there are no more letters to input
                 if (index < encrypting.length()) {
                     block[i][j] = encrypting.charAt(index++);
                 } else {
@@ -46,7 +46,7 @@ public class SimpleEncryptionR1 {
         // encrypt the message based on the keyword by iterating through the block array
         for (int i = 0; i < blockHeight; i++) {
             for (int j = 0; j < encryptor.length(); j++) {
-                //find the int value for the shift
+                //find the int value for the shift letter
                 int shift = letterShiftValues.get(encryptor.charAt(j));
                 //get the current char in the loop
                 char currentChar = block[i][j];
@@ -56,7 +56,9 @@ public class SimpleEncryptionR1 {
                     //new position after shifting while ensuring that the shift is within the range of
                     //0-25
                     int shiftedIndex = (currentChar - 'A' + shift) % 26;
+                    //set the same block position to the new shifted variable
                     block[i][j] = (char) ('A' + shiftedIndex);
+                    //add the new block to the corresponding index
                     encryptedMessage[encryptedIndex++] = block[i][j];
                 }
             }
