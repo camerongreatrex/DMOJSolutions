@@ -68,6 +68,6 @@ public class SimpleEncryptionR1 {
             }
         }
         // print the encrypted message
-        System.out.println(new String(encryptedMessage));
+        System.out.println(encryptedMessage);
     }
 }
