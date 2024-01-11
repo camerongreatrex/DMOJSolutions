@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="finalized the revisions/final versions again2">
-      <change afterPath="$PROJECT_DIR$/MiscDMOJ/TissueBox.java" afterDir="false" />
+    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="stuff">
+      <change afterPath="$PROJECT_DIR$/MandatoryDMOJ/AbsolutelyAcidic/AbsolutelyAcidic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Misc/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DMOJSolutions/Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DMOJSolutions/Test/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +32,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2WiHT0G1kcFfgV8UZvD2VYPxWY0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,11 +48,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/cameron/Desktop/School/Grade 11/Computer Science/DMOJSolutions&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -51,13 +64,26 @@
       <recent name="$PROJECT_DIR$/MandatoryDMOJ/OldFishinHole" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TissueBox">
-    <configuration name="Bingbongtestgone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.MiscDMOJ.Bingbongtestgone" />
+  <component name="RunManager" selected="Application.AbsolutelyAcidic">
+    <configuration name="AbsolutelyAcidic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.MandatoryDMOJ.AbsolutelyAcidic.AbsolutelyAcidic" />
       <module name="DMOJSolutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test.MiscDMOJ.*" />
+          <option name="PATTERN" value="Test.MandatoryDMOJ.AbsolutelyAcidic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.Misc.Car" />
+      <module name="DMOJSolutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.Misc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,32 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleEncryptionR1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.MandatoryDMOJ.SimpleEncryption.SimpleEncryptionR1" />
-      <module name="DMOJSolutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.MandatoryDMOJ.SimpleEncryption.SimpleEncryptionR1" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.MiscDMOJ.TrashPush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.MiscDMOJ.TrashPush" />
-      <module name="DMOJSolutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.MiscDMOJ.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TissueBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test.MiscDMOJ.TissueBox" />
       <module name="DMOJSolutions" />
@@ -117,15 +117,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="maisdjs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.MiscDMOJ.maisdjs" />
+      <module name="DMOJSolutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.MiscDMOJ.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AbsolutelyAcidic" />
+        <item itemvalue="Application.Car" />
+        <item itemvalue="Application.maisdjs" />
         <item itemvalue="Application.TissueBox" />
         <item itemvalue="Application.SimpleEncryptionFinal" />
-        <item itemvalue="Application.SimpleEncryptionR1" />
-        <item itemvalue="Application.Bingbongtestgone" />
-        <item itemvalue="Application.Test.MiscDMOJ.TrashPush" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-temurin-1.8.0_392-f644763e9732-20ce4750" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -135,6 +155,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697208485366</updated>
+      <workItem from="1704985640978" duration="103000" />
+      <workItem from="1704985751525" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="removed iterative files and WIP's">
       <created>1697210381446</created>
@@ -332,8 +354,18 @@
       <option name="project" value="LOCAL" />
       <updated>1700231123639</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="stuff">
+      <created>1701222636508</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701222636508</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -347,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed the folder from DMOJ Q's b/c they got deleted" />
     <MESSAGE value="removed cellphone outside of the folder" />
     <MESSAGE value="solved KeepingScore dmoj problem" />
     <MESSAGE value="added OldFishinHole for dmoj" />
@@ -372,7 +403,8 @@
     <MESSAGE value="finalized the revisions/final versions" />
     <MESSAGE value="finalized the revisions/final versions again" />
     <MESSAGE value="finalized the revisions/final versions again2" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalized the revisions/final versions again2" />
+    <MESSAGE value="stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
