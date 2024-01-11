@@ -7,6 +7,9 @@ import java.io.InputStreamReader;
 public class AbsolutelyAcidic {
 
     public static void main(String[] args) throws IOException {
+
+        //TODO: simple test cases from dmoj do not work, the test case 4 does not work and prints 408
+
         // BufferedReader to read input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // Read the number of sensors
