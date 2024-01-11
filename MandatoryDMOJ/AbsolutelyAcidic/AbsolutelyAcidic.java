@@ -10,13 +10,13 @@ public class AbsolutelyAcidic {
         // BufferedReader to read input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // Read the number of sensors
-        int n = Integer.parseInt(br.readLine());
+        int sensors = Integer.parseInt(br.readLine());
         // Arrays to store sensor readings and their frequencies
-        int[] readings = new int[n];
+        int[] readings = new int[sensors];
         int[] frequencies = new int[1001]; // Assuming readings are in the range [0, 1000]
 
         // Input sensor readings and update frequencies
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < sensors; i++) {
             readings[i] = Integer.parseInt(br.readLine());
             frequencies[readings[i]]++;
         }
@@ -27,9 +27,11 @@ public class AbsolutelyAcidic {
 
         // Find the most and second most frequent readings
         for (int i = 0; i < frequencies.length; i++) {
+            // Most frequent reading
             if (mostFrequentReading == -1 || frequencies[i] > frequencies[mostFrequentReading]) {
                 secondMostFrequentReading = mostFrequentReading;
                 mostFrequentReading = i;
+                // Second most frequent reading
             } else if (secondMostFrequentReading == -1 || frequencies[i] > frequencies[secondMostFrequentReading]) {
                 secondMostFrequentReading = i;
             }
