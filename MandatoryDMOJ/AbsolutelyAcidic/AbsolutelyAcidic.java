@@ -3,41 +3,38 @@ package Test.MandatoryDMOJ.AbsolutelyAcidic;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AbsolutelyAcidic {
 
     public static void main(String[] args) throws IOException {
-
-        //TODO: simple test cases from dmoj do not work, the test case 4 does not work and prints 408
-
         // BufferedReader to read input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // Read the number of sensors
         int sensors = Integer.parseInt(br.readLine());
-        // Arrays to store sensor readings and their frequencies
-        int[] readings = new int[sensors];
-        int[] frequencies = new int[1001]; // Assuming readings are in the range [0, 1000]
+        // Hashmap to store the first sensor reading and the amount of times it occurs
+        HashMap<Integer, Integer> numberFrequency = new HashMap<>();
 
         // Input sensor readings and update frequencies
         for (int i = 0; i < sensors; i++) {
-            readings[i] = Integer.parseInt(br.readLine());
-            frequencies[readings[i]]++;
+            // Read the sensor reading
+            int reading = Integer.parseInt(br.readLine());
+            // If the reading is already in the hashmap, increment the frequency, if not, add it to the hashmap
+            if (numberFrequency.containsKey(reading)) {
+                numberFrequency.put(reading, numberFrequency.get(reading) + 1);
+            } else {
+                numberFrequency.put(reading, 1);
+            }
         }
 
         // Variables to store the most and second most frequent readings
-        int mostFrequentReading = -1;
-        int secondMostFrequentReading = -1;
+        int mostFrequentReading = 0;
+        int secondMostFrequentReading = 0;
 
         // Find the most and second most frequent readings
-        for (int i = 0; i < frequencies.length; i++) {
-            // Most frequent reading
-            if (mostFrequentReading == -1 || frequencies[i] > frequencies[mostFrequentReading]) {
-                secondMostFrequentReading = mostFrequentReading;
-                mostFrequentReading = i;
-                // Second most frequent reading
-            } else if (secondMostFrequentReading == -1 || frequencies[i] > frequencies[secondMostFrequentReading]) {
-                secondMostFrequentReading = i;
-            }
+        for (int i = 0; i < sensors; i++) {
+
         }
 
         // Calculate and print the absolute difference
