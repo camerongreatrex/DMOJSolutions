@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AbsolutelyAcidic {
+public class AbsolutelyAcidicR2 {
 
-    // Problem: does not handle correctly if all the numbers occur with the same frequency
-    // i.e 10,6,1,8 the frequency of each number is 1, so the program mishandled this case, and printed 10 instead of 9
-
+    //TODO: does not handle correctly if all the numbers occur with the same frequency
+    // i.e the test case from DMOJ: 10,6,1,8 the frequency of each number is 1, so the program mishandles this case if the
+    // are all the same frequency, and printed 0 instead of 9
 
     public static void main(String[] args) throws IOException {
         // BufferedReader to read input
@@ -34,7 +34,6 @@ public class AbsolutelyAcidic {
         }
 
         // Variables and arraylists to store the highest and second highest frequency readings
-        // and their frequencies i.e number is 10, and it occurs 3 times
         int highestFreq = 0;
         ArrayList<Integer> highestFreqReadings = new ArrayList<>();
         int secondHighestFreq = 0;
@@ -42,6 +41,7 @@ public class AbsolutelyAcidic {
 
         // Iterate through each entry in the hashmap
         for (Map.Entry<Integer, Integer> entry : numberFrequency.entrySet()) {
+            // ChatGPT helped with making the entrySet to read values from the hashmap
             int reading = entry.getKey(); // current reading
             int frequency = entry.getValue(); // frequency of current reading
 
@@ -68,26 +68,17 @@ public class AbsolutelyAcidic {
                 secondHighestFreqReadings.add(reading);
             }
         }
-
         // Initialize variable to store the maximum absolute difference
         int maxDifference = 0;
 
         // Calculate the maximum absolute difference
         if (highestFreqReadings.size() == 1) {
-            // If there is only one highest frequency reading, calculate the difference with each of the second highest frequency readings
             for (int reading : secondHighestFreqReadings) {
                 maxDifference = Math.max(maxDifference, Math.abs(highestFreqReadings.get(0) - reading));
             }
-        } else {
-            // If there are multiple highest frequency readings, calculate the difference among them
-            for (int i = 0; i < highestFreqReadings.size(); i++) {
-                for (int j = i + 1; j < highestFreqReadings.size(); j++) {
-                    maxDifference = Math.max(maxDifference, Math.abs(highestFreqReadings.get(i) - highestFreqReadings.get(j)));
-                }
-            }
         }
 
-        // Output the result
+        // Calculate and print the absolute difference
         System.out.println(maxDifference);
     }
 }

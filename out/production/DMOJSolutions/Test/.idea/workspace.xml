@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02836991-0ef0-48c8-984e-274733598298" name="Changes" comment="r5, finally solved this shit cuz i forgot that they all could be the most occuring number..." />
+    <list default="true" id="02836991-0ef0-48c8-984e-274733598298" name="Changes" comment="solved MedianMark">
+      <change afterPath="$PROJECT_DIR$/MandatoryDMOJ/AbsolutelyAcidic/AbsolutelyAcidicR1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MandatoryDMOJ/AbsolutelyAcidic/AbsolutelyAcidicR2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryDMOJ/AbsolutelyAcidic/AbsolutelyAcidic.java" beforeDir="false" afterPath="$PROJECT_DIR$/MandatoryDMOJ/AbsolutelyAcidic/AbsolutelyAcidicFinal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,21 +32,73 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AbsolutelyAcidic.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AbsolutelyAcidic.executor": "Run",
+    "Application.AbsolutelyAcidicFinal.executor": "Run",
+    "Application.AbsolutelyAcidicR1.executor": "Run",
+    "Application.AbsolutelyAcidicR2.executor": "Run",
+    "Application.MedianMark.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="Application.AbsolutelyAcidicFinal">
+    <configuration name="AbsolutelyAcidicFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.MandatoryDMOJ.AbsolutelyAcidic.AbsolutelyAcidicFinal" />
+      <module name="DMOJSolutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.MandatoryDMOJ.AbsolutelyAcidic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsolutelyAcidicR1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.MandatoryDMOJ.AbsolutelyAcidic.AbsolutelyAcidicR1" />
+      <module name="DMOJSolutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.MandatoryDMOJ.AbsolutelyAcidic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbsolutelyAcidicR2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.MandatoryDMOJ.AbsolutelyAcidic.AbsolutelyAcidicR2" />
+      <module name="DMOJSolutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.MandatoryDMOJ.AbsolutelyAcidic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AbsolutelyAcidicFinal" />
+        <item itemvalue="Application.AbsolutelyAcidicR1" />
+        <item itemvalue="Application.AbsolutelyAcidicR2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -53,6 +116,9 @@
       <updated>1705287968205</updated>
       <workItem from="1705287969259" duration="1331000" />
       <workItem from="1705453408290" duration="1000" />
+      <workItem from="1705453559226" duration="1261000" />
+      <workItem from="1705457849897" duration="1705000" />
+      <workItem from="1706219327792" duration="3751000" />
     </task>
     <task id="LOCAL-00001" summary="r5, finally solved this shit cuz i forgot that they all could be the most occuring number...">
       <option name="closed" value="true" />
@@ -62,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705289254346</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="solved MedianMark">
+      <option name="closed" value="true" />
+      <created>1705456245691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705456245691</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="r5, finally solved this shit cuz i forgot that they all could be the most occuring number..." />
-    <option name="LAST_COMMIT_MESSAGE" value="r5, finally solved this shit cuz i forgot that they all could be the most occuring number..." />
+    <MESSAGE value="solved MedianMark" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved MedianMark" />
   </component>
 </project>
