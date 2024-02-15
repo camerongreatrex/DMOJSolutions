@@ -2,25 +2,14 @@ package Test.MandatoryDMOJ;
 
 import java.util.*;
 
-/**
- * This class represents a social network where people are friendships are represented by a map.
- */
 public class DegreesOfSeparation {
-    // A map where the key is a person and the value is a set of that person's friends.
     private Map<Integer, Set<Integer>> friendships;
 
-    /**
-     * Constructor for the DegreesOfSeparation class.
-     * Initializes the friendships map.
-     */
     public DegreesOfSeparation() {
         friendships = new HashMap<>();
     }
 
-    /**
-     * Initializes friendships from the provided adjacency list.
-     * @param adjacencyList A map where the key is a person and the value is a list of that person's friends.
-     */
+    // Method to initialize friendships from the provided adjacency list
     public void initializeFriendships(Map<Integer, List<Integer>> adjacencyList) {
         for (Map.Entry<Integer, List<Integer>> entry : adjacencyList.entrySet()) {
             int person = entry.getKey();
@@ -36,11 +25,7 @@ public class DegreesOfSeparation {
         }
     }
 
-    /**
-     * Makes two people friends by adding each other to their respective friends sets.
-     * @param x The first person.
-     * @param y The second person.
-     */
+    // Method to make two people friends
     public void makeFriends(int x, int y) {
         addPersonIfNotExists(x);
         addPersonIfNotExists(y);
@@ -49,11 +34,7 @@ public class DegreesOfSeparation {
         friendships.get(y).add(x);
     }
 
-    /**
-     * Deletes the friendship between two people by removing each other from their respective friends sets.
-     * @param x The first person.
-     * @param y The second person.
-     */
+    // Method to delete the friendship between two people
     public void deleteFriendship(int x, int y) {
         if (friendships.containsKey(x) && friendships.containsKey(y)) {
             friendships.get(x).remove(y);
@@ -61,20 +42,12 @@ public class DegreesOfSeparation {
         }
     }
 
-    /**
-     * Returns the number of friends a person has.
-     * @param x The person.
-     * @return The number of friends the person has.
-     */
+    // Method to output the number of friends a person has
     public int numberOfFriends(int x) {
         return friendships.containsKey(x) ? friendships.get(x).size() : 0;
     }
 
-    /**
-     * Returns the number of "friends of friends" a person has.
-     * @param x The person.
-     * @return The number of "friends of friends" the person has.
-     */
+    // Method to output the number of "friends of friends" a person has
     public int numberOfFriendsOfFriends(int x) {
         Set<Integer> friends = friendships.getOrDefault(x, new HashSet<>());
         Set<Integer> friendsOfFriends = new HashSet<>();
@@ -91,12 +64,8 @@ public class DegreesOfSeparation {
         return friendsOfFriends.size();
     }
 
-    /**
-     * Returns the degree of separation between two people.
-     * @param x The first person.
-     * @param y The second person.
-     * @return The degree of separation between the two people.
-     */
+
+    // Method to output the degree of separation between two people
     public String degreeOfSeparation(int x, int y) {
         if (x == y) return "0";
         if (!friendships.containsKey(x) || !friendships.containsKey(y)) return "Not connected";
@@ -126,27 +95,37 @@ public class DegreesOfSeparation {
         return "Not connected";
     }
 
-    /**
-     * Adds a person to the friendships map if they do not already exist.
-     * @param person The person to add.
-     */
+    // Method to add a person if not exists
     private void addPersonIfNotExists(int person) {
         if (!friendships.containsKey(person)) {
             friendships.put(person, new HashSet<>());
         }
     }
 
-    /**
-     * The main method.
-     * @param args The command line arguments.
-     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DegreesOfSeparation graph = new DegreesOfSeparation();
 
         // Your provided adjacency list
         Map<Integer, List<Integer>> adjacencyList = new HashMap<>();
-        // Initialize adjacency list here...
+        adjacencyList.put(1, Arrays.asList(6));
+        adjacencyList.put(2, Arrays.asList(6));
+        adjacencyList.put(3, Arrays.asList(4, 5, 6, 15));
+        adjacencyList.put(4, Arrays.asList(3, 5, 6));
+        adjacencyList.put(5, Arrays.asList(3, 4, 6));
+        adjacencyList.put(6, Arrays.asList(1, 2, 3, 4, 5, 7));
+        adjacencyList.put(7, Arrays.asList(6, 8));
+        adjacencyList.put(8, Arrays.asList(7, 9));
+        adjacencyList.put(9, Arrays.asList(8, 10, 12));
+        adjacencyList.put(10, Arrays.asList(9, 11));
+        adjacencyList.put(11, Arrays.asList(10, 12));
+        adjacencyList.put(12, Arrays.asList(9, 11, 13));
+        adjacencyList.put(13, Arrays.asList(12, 14, 15));
+        adjacencyList.put(14, Arrays.asList(13));
+        adjacencyList.put(15, Arrays.asList(3, 13));
+        adjacencyList.put(16, Arrays.asList(17, 18));
+        adjacencyList.put(17, Arrays.asList(16, 18));
+        adjacencyList.put(18, Arrays.asList(16, 17));
 
         graph.initializeFriendships(adjacencyList);
 
