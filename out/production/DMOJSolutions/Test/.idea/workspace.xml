@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="started DegreesOfSeparation" />
+    <list default="true" id="eb26e61c-4b09-450b-a3b1-8b829f9d0b30" name="Changes" comment="fixed DegreesOfSeparation again">
+      <change afterPath="$PROJECT_DIR$/MiscDMOJ/Cookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryDMOJ/DegreesOfSeparation.java" beforeDir="false" afterPath="$PROJECT_DIR$/MandatoryDMOJ/DegreesOfSeparation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DMOJSolutions/Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DMOJSolutions/Test/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +184,17 @@
       <workItem from="1707489456551" duration="2003000" />
       <workItem from="1707840388967" duration="2569000" />
       <workItem from="1707929709848" duration="100000" />
-      <workItem from="1708015433396" duration="838000" />
+      <workItem from="1708015433396" duration="7078000" />
+      <workItem from="1708531739645" duration="118000" />
+      <workItem from="1708696468544" duration="3572000" />
+      <workItem from="1709048084096" duration="8014000" />
+      <workItem from="1710984504011" duration="615000" />
+      <workItem from="1711332163377" duration="2435000" />
+      <workItem from="1711335106156" duration="537000" />
+      <workItem from="1711373008701" duration="46000" />
+      <workItem from="1711392508277" duration="2341000" />
+      <workItem from="1711480871109" duration="597000" />
+      <workItem from="1712068812425" duration="1829000" />
     </task>
     <task id="LOCAL-00001" summary="removed iterative files and WIP's">
       <created>1697210381446</created>
@@ -441,7 +455,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708015833880</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fixed DegreesOfSeparation">
+      <option name="closed" value="true" />
+      <created>1708016319057</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1708016319057</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fixed DegreesOfSeparation again">
+      <option name="closed" value="true" />
+      <created>1708017099302</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1708017099302</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,8 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revision 3 final REAL" />
-    <MESSAGE value="revision FINAL" />
     <MESSAGE value="revision FINAL - added author comments" />
     <MESSAGE value="revision FINAL - optimized the if statement" />
     <MESSAGE value="solved DistinctYears and created HelloWorldHard" />
@@ -484,7 +512,9 @@
     <MESSAGE value="solved golf, it's cold here, and squares" />
     <MESSAGE value="semi-solved troyangles and solved listminimum" />
     <MESSAGE value="started DegreesOfSeparation" />
-    <option name="LAST_COMMIT_MESSAGE" value="started DegreesOfSeparation" />
+    <MESSAGE value="fixed DegreesOfSeparation" />
+    <MESSAGE value="fixed DegreesOfSeparation again" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed DegreesOfSeparation again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
